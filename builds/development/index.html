@@ -1,13 +1,208 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>day #</title>
-  <link rel="stylesheet" href="css/myStyle.css">
-  <link rel="stylesheet" href="css/anotherstyle.css">
+  <title>Hongbo resume</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+
+<body ng-app="myApp">
+  <!--begin inner body container-->
+  <div class="container" ng-controller="ResumeController">
+
+    <!--begin header-->
+    <div class="header">
+      <div class="header_logo col-md-10">
+        <span class="header_logo_word_1">R</span>
+        <span class="header_logo_word_2">e</span>
+        <span class="header_logo_word_3">s</span>
+        <span class="header_logo_word_4">u</span>
+        <span class="header_logo_word_5">m</span>
+        <span class="header_logo_word_6">e</span>
+      </div>
+      <div class="header_name col-md-90">
+        <input type="text" class="header_logo_name" value="Hongbo Jing " />
+        <i class="fa fa-microphone header_logo_telephone_icon"></i>
+        <span><i class="fa fa-search header_logo_icon"></i></span>
+      </div>
+
+    </div>
+    <!--end header-->
+
+    <div class="result">
+      <div class="col-md-10"></div>
+      <div class="col-md-90">
+        <p>About 000,000,001 result (0.01 seconds)</p>
+      </div>
+    </div>
+    <!--begin objective and contact information-->
+    <div class="objective_contact_info">
 
 
+      <div class="col-md-30">
+        <div class="telephone">
+          <span class="telephone_icon">
+              <i class="fa fa-mobile"></i>
+            </span>
+          <span class="telephone_number" ng-bind="resumeData.phoneNumber">
+
+            </span>
+        </div>
+
+        <div class="email">
+          <span class="email_icon">
+              <i class="fa fa-envelope-o"></i>
+            </span>
+          <span class="email_address" ng-bind="resumeData.email"></span>
+        </div>
+
+
+      </div>
+      <div class="col-md-70">
+        <div class="objective_content">
+          <div class="objective_header"><span><i class="fa fa-bullseye"></i>OBJECTIVE</span>
+          </div>
+          <span ng-bind="resumeData.objective"></span>
+
+          <p>
+            <a ng-href="{{resumeData.onlineResume}}">http://angularfox.com/hongbojing/index.php</a>
+            <div class="address">
+              <span class="address_icon">
+                <i class="fa fa-map-marker"></i>
+              </span>
+              <span class="address_real" ng-bind="resumeData.address"></span>
+            </div>
+          </p>
+        </div>
+      </div>
+
+    </div>
+    <!--end objective and contact information-->
+
+    <!--begin experience-->
+    <div class="experience">
+      <div class="col-md-20">
+
+      </div>
+      <div class="col-md-70 experience_part">
+        <span><h1><i class="fa fa-briefcase"></i>Experience</h1></span>
+        <div class="experience_num">
+          <span><h2>Web Developer </h2></span>
+          <h3><a href="http://angularfox.com/" target="_blank">http://angularfox.com/</a> <span class="time">April 2015-May 2015</span></h3>
+          <p>I design and develop this website to show my ability of web development, including PHP & MySQL & jQuery. You could log in and try the applications on the site.</p>
+        </div>
+
+        <div class="experience_num">
+          <span><h2>OPS Web Developer </h2></span>
+          <h3>Warrington College of Business Administration <span class="time">Sep 2014-Present</span></h3>
+
+          <p>Work 20h per week for Warrington College of Business Administration Communication Services, responsible for
+            <1> Building faculty websites in Warrington Website System.
+              <2> Developing Calendar-events section in Warrington sites with the function of filtering and sorting JSON data.
+                <3> Testing JavaScript code for Warrington Touch Screen in Hough Hall, Stuzin Hall, and Heavener Hall.</p>
+        </div>
+
+        <div class="experience_num">
+          <span><h2>Front-end Developer </h2></span>
+          <h3>OCOOS company in Ocala, Florida. <span class="time">June 2014-Feb 2015</span></h3>
+
+          <p>Responsible for designing and developing
+            <1> Whole front-end UI section for “Email-Manager” software in ZEND-MVC framework, with which OCOOS uses for interacting with their Email-Database.
+              <2> Responsive landing pages for specific business topics.
+                <3> HTML e-mail for advertisement purpose.</p>
+          <span><h2>Front-end Developer</h2></span>
+        </div>
+
+        <div class="experience_num">
+          <h3>CSA (Chinese Students Association) at UF <span class="time">June 2014-Present</span></h3>
+
+          <p>Responsible for designing and developing the CSA official website using Word Press, Bootstrap and PHP on GoDaddy. Website: <a href="http://uflchina.org/" target="_blank">http://uflchina.org/</a>
+          </p>
+        </div>
+
+      </div>
+
+
+
+    </div>
+    <!--end experience-->
+
+    <!--begin education-->
+    <div class="education">
+      <div class="col-md-20">
+
+      </div>
+      <div class="col-md-70 education_part">
+        <h1><i class="fa fa-graduation-cap"></i>Education</h1>
+        <p>University of Florida-Hough Graduate School of Business <span class="time">Aug 2013-May 2015</span>
+        </p>
+        <p>Master of Information System and Operation Management</p>
+      </div>
+
+    </div>
+
+    <!--end education-->
+
+    <!--begin skill-->
+    <div class="skill">
+      <div class="col-md-20">
+
+      </div>
+      <div class="col-md-70 skill_part">
+        <h1><i class="fa fa-wrench"></i>Skill</h1>
+
+        <p>Front-end: HTML, CSS, Sass, JavaScript, Graphic Design, JSON, XML</p>
+        <p>Front-end-framework-or-library: jQuery, Angular.js, Raphael.js, Bootstrap</p>
+        <p>Back-end-basic: PHP, C#, Java, SQL</p>
+        <p>Software: Brackets, Sublime, Note Pad++, Text Wrangler, Dreamweaver, Chrome console, Net-Beans, Eclipse, Photo Shop, Office Suites including VISIO, i-Terminal, XAMP, WAMP, MAMP, File-Zilla, Trello
+          <p>Application Framework: ZEND(MVC)</p>
+
+          <p>Version Control: GIT</p>
+      </div>
+
+    </div>
+
+    <!--end skill-->
+
+    <!--begin footer-->
+    <div class="footer">
+      <div class="col-md-10"></div>
+      <div class="col-md-90"></div>
+      <div class="col-md-40">
+
+      </div>
+      <div class="col-md-60">
+        <span class="header_logo_word_1">R</span>
+        <span class="header_logo_word_2">e</span>
+        <span class="header_logo_word_3">s</span>
+        <span class="header_logo_word_3">s</span>
+        <span class="header_logo_word_3">s</span>
+        <span class="header_logo_word_3">s</span>
+        <span class="header_logo_word_4">u</span>
+        <span class="header_logo_word_5">m</span>
+        <span class="header_logo_word_6">e</span>
+      </div>
+      <div class="col-md-40">
+
+      </div>
+      <div class="col-md-60">
+        <span class="header_logo_word_1">1</span>
+        <span class="header_logo_word_2">2</span>
+        <span class="header_logo_word_3">3</span>
+        <span class="header_logo_word_3">3</span>
+        <span class="header_logo_word_3">3</span>
+        <span class="header_logo_word_3">3</span>
+        <span class="header_logo_word_4">4</span>
+        <span class="header_logo_word_5">5</span>
+        <span class="header_logo_word_6">6</span>
+      </div>
+    </div>
+    <!--end footer-->
+  </div>
+  <script src="js/lib/angular/angular.min.js"></script>
+  <script src="js/lib/angular/app.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,243 @@
+/* Import fonts */
+@import url("http://fonts.googleapis.com/css?family=Bree+Serif|Merriweather:400,300,700,900|Droid+Sans:400,700");
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Reset Styles */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+.container{
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+@media (min-width: 768px){
+  .container{
+    width: 750px;
+  }
+}
+@media(min-width:992px){
+  .container{
+    width:970px;
+  }
+}
+@media(min-width: 1200px){
+  .container{
+    width: 1170px;;
+  }
+}
+.row{
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.col-md-10, .col-md-90, .col-md-80, .col-md-70, .col-md-60, .col-md-50, .col-md-40, .col-md-30, .col-md-20{
+  position:relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float:left;
+
+}
+.col-md-10{
+  width: 12%;
+}
+.col-md-90{
+  width: 88%;
+}
+.col-md-20{
+  width: 20%;
+}
+.col-md-30{
+  width: 30%;
+}
+.col-md-40{
+  width: 40%;
+}
+.col-md-50{
+  width: 50%;
+}
+.col-md-60{
+  width: 60%;
+}
+.col-md-70{
+  width: 70%;
+}
+.col-md-80{
+  width: 80%;
+}
+.header_logo_word_1 {
+  color: #156AEC;
+}
+
+.header_logo_word_2 {
+  color: #da4632;
+}
+
+.header_logo_word_3 {
+  color: #ffb801;
+}
+
+.header_logo_word_4 {
+  color: #146aea;
+}
+
+.header_logo_word_5 {
+  color: #009856;
+}
+
+.header_logo_word_6 {
+  color: #d84833;
+}
+.header{
+  padding: 20px;
+  background-color: #f1f1f1;
+  min-height: 60px;
+}
+.header_logo, .header_name{
+  margin-bottom: 20px;
+
+}
+.header_logo span{
+  font-size: 23px;
+  margin-left: 1px;
+  padding-left: 0;
+  float: left;
+}
+input.header_logo_name{
+  height: 23px;
+  width: 80%;
+  margin-left: -10px;
+  padding-left: 5px;
+  font-size: inherit;
+}
+.header_name input{
+  margin-left: 28px;
+}
+span .header_logo_icon{
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: -5px;
+  background-color: #4A8BF4;
+  color: #FFFFFF;
+  height: 23px;
+  padding-top: 5px;
+  font-size: 14px;
+}
+i.header_logo_telephone_icon{
+  margin-left: -20px;
+  margin-right: 6px;
+  color: #676767;
+}
+.result{
+  height: 30px;
+  border-bottom: solid #f1f1f1 1px;
+  padding-left: 13px;
+  padding-top: 10px;
+  color: #808080;
+  font-size: small;
+  margin-left: 40px;
+
+}
+.objective_contact_info{
+  margin-top: 10px;
+  line-height: 20px;
+
+}
+.objective_contact_info .fa-envelope-o{
+  margin-right: 1px;
+  margin-left: -4px;
+  color: #156AEC;
+
+}
+.objective_contact_info .fa-mobile{
+  margin-right: 6px;
+  margin-left: 0px;
+  font-size: 18px;
+
+}
+.objective_content{
+  margin-left: -160px;
+}
+.objective_contact_info .fa-map-marker{
+  margin-left: 4px;
+  margin-right: 4px;
+  color: #d84833;
+
+}
+.objective_content .fa-bullseye{
+  margin-right: 4px;
+  color: #009856;
+
+}
+.objective_content{
+  background-color: #f9f2f9;
+  padding: 4px;
+}
+.objective_content a{
+  color: #006621;
+}
+.experience_part, .education_part, .skill_part{
+  margin-left: -40px;
+  margin-top: 20px;
+  line-height: 20px;
+}
+.experience .fa-briefcase{
+  margin-right: 4px;
+}
+.education .fa-graduation-cap{
+  margin-right: 4px;
+}
+.skill .fa-wrench{
+  margin-right: 4px;
+}
+
+.experience h1,.experience h2,.skill h1,.education h1{
+  color: #1E0FBE;
+}
+.experience h3 {
+  color: #006621;
+}
+span.time{
+  color: #1E0FBE;
+  margin-left: 15px;
+}
+.experience .experience_num{
+  margin-top: 20px;
+}
+.footer .col-md-90{
+  border-bottom: solid #f1f1f1 1px;
+  margin-left: 40px;
+}
